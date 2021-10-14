@@ -1,0 +1,29 @@
+{
+    "name": "ajayjoshi/fast2sms",
+    "description": "Laravel implementation of Fast2Sms HTTP SMS API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ajayjoshi\\Fast2sms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ajay joshi",
+            "email": "ajayjoshi.mtr@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ajayjoshi\\Fast2sms\\Fast2SmsServiceProvider"
+            ],
+            "aliases": {
+                "Fast2Sms": "Ajayjoshi\\Fast2sms\\Fast2SmsApiFacade"
+            }
+        }
+    }
+}
